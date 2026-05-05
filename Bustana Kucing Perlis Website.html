@@ -1,0 +1,339 @@
+<BUSTANA KUCING PERLIS>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bustana Kucing Perlis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+	html {
+        scroll-behavior: smooth !important; }
+
+        .gallery img {
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+  body {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                url('IMAGE/WALLPAPERKUCING3.JPG');
+    background-size: cover;       
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header h1 {
+            float: left;
+	    color: #fff;
+        }
+
+        nav {
+            float: right;
+	    margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        .hero {
+	background: url('IMAGE/HEADERKUCING1.JPG');
+	background-attachment: fixed; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 90vh;
+	color: white; 
+    	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+        }
+
+	.hero h2 { font-size: 50px; }
+
+	.about-container {
+    display: flex !important;   
+    flex-direction: row;       
+    align-items: center;        
+    justify-content: space-between; 
+    max-width: 1000px;        
+    margin: 0 auto;     
+    padding: 20px
+	}
+
+	.about-image img {
+    width: 100%;
+    max-width: 300px;           
+    border-radius: 15px;
+    height: auto; }
+	
+	.kapsyen {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 8px;
+	}
+
+	.about-text {
+    flex: 1;                    
+    text-align: left;  
+    line-height: 1.6;         
+    padding-right: 30px;}
+	
+    .about-text p {
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+    .about-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+        .hero h2 {
+            font-size: 50px;
+        }
+	
+        .section {
+            padding: 50px 0;
+        }
+
+        .about, .services {
+            text-align: justify;
+	    line-height: 1.8;
+        }
+	
+        .services .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);        
+    margin-top: 30px; 
+    gap: 30px;
+}
+
+	.card {
+	background: #f4f4f4;
+	padding: 20px;
+	width: auto;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+	.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+	.card img { 
+	width: 100%; 
+	border-radius: 12px;
+	margin-bottom: 15px;
+	height: 200px;
+	object-fit: cover; 
+      }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.3s;
+         }
+	.gallery img:hover { transform: scale(1.05); }
+
+        .contact { 
+	text-align: center; padding: 50px 0; 
+	}
+	.contact input, .contact textarea { 
+	width: 60%; 
+	padding: 10px; 
+	margin: 10px 0; 	
+	border: 1px solid #ccc; 
+	border-radius: 5px; 
+	}
+        .contact button { 
+	padding: 10px 30px; 
+	background: #333; 
+	color: white; 
+	border: none; 	
+	cursor: pointer; 
+	border-radius: 5px; 
+	}
+
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px){
+            .services .card-container { 
+	grid-template-columns: 1fr; 
+	}
+            .about-container { 
+	flex-direction: column; 
+	}
+            header h1, nav { 
+	float: none; text-align: center; 
+	}
+            .contact input, .contact textarea { width: 90%; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>BUSTANA KUCING PERLIS🐱</h1>
+        <nav>
+	    <a href="#">Utama</a>
+            <a href="#Tentang Kami">Tentang Kami</a>
+            <a href="#servis">Servis</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#lokasi">Lokasi</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>BUSTANA KUCING PERLIS</h2>
+        <p>Every rescued animals has a tory-one of hope,love and second chances🐾</p>
+    </div>
+</section>
+
+<section id="Tentang Kami">
+    <div class="about-container">
+        <div class="Tentang Kami-text">
+        <h2>Tentang Kami</h2>
+        <p>Bustana Kucing Perlis adalah sebuah pusat haiwan peliharaan yang terletak di Sungai Batu Pahat, 02400 Kangar, Perlis, Malaysia. Kami menawarkan pelbagai produk dan perkhidmatan untuk kucing dan anjing, termasuk makanan, aksesori, dan rawatan kesihatan. Bustana Kucing Perlis ditubuhkan oleh Encik Mohd Taufik bin Md Zain bersama pengasas bersama Puan Noor Azlina bt Abu Bakar, Dr. Thomas Jong Ah Khaw, dan Haixiey Majibon.
+	</p>
+
+	<h3>Kolaborasi</h3>
+	<p>Program Purr-Fect Care By Si Comot Bantu 3000 Ekor Kucing Di Perlis- Program tanggungjawab sosial korporat (CSR), Purr-Fect Care by Si Comot yang dianjurkan oleh Powercat dengan kerjasama Kelab Khidmat Masyarakat UniMAP, telah berlangsung dengan jayanya di Bustana Kucing Perlis.Program ini bertujuan membantu lebih daripada 3,000 ekor kucing yang berada di bawah jagaan pusat perlindungan tersebut. Sebagai tanda sokongan, pihak Si Comot by Powercat telah menyumbangkan sebanyak 800kg makanan kucing serta pelbagai peralatan keperluan harian untuk digunakan oleh pihak Bustana Kucing Perlis. Program ini turut disertai oleh para pelajar dari Kelab Khidmat Masyarakat UniMAP yang hadir membantu membersihkan dan menyusun semula kawasan shelter, sebagai tanda prihatin terhadap kebajikan haiwan terbiar.</p>
+
+	<h4>Hubungi Kami</h4>
+	<p>013-4300443 (En. Mohd Taufik bin Md Zain)
+    </div>
+<div class="about-image">
+            <img src="IMAGE/GAMBAROWNER1.JPG" alt="Owner 1">
+	    <div class="kapsyen">Pengurus 1, En. Mohd Taufik bin Md Zain.</div>
+	    <div>
+	    <img src="IMAGE/GAMBAROWNER2.JPG" alt="Owner 2">
+	    <div class="kapsyen">Pengurus 2, Puan Noor Azlina bt Abu Bakar.</div>
+
+        </div>
+</section>
+
+<section class="container" id="servis">
+    <div class="container">
+        <h2>SERVIS YANG DISEDIAKAN</h2>
+
+        <div class="card-container">
+            <div class="card">
+	         <img src="IMAGE/BUSTANAKUCING8.JPG">
+                <h3>Perkhidmatan Komuniti & Pemeliharaan</h3>
+                <p>Dengan bayaran kecil (bermula sekitar RM30), orang awam boleh mengadopsi kucing. Bayaran ini membantu pusat perlindungan menambah dana untuk makanan dan ubat-ubatan. Kami juga berusaha mendidik orang awam mengenai pemilikan haiwan peliharaan yang bertanggungjawab dan kepentingan menjaga haiwan jalanan. Akhir sekali, pusat perlindungan ini menawarkan peluang kepada pencinta haiwan untuk menyumbangkan masa dan tenaga mereka bagi membantu menguruskan populasi kucing.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMAGE/BUSTANAKUCING11.JPG">
+                <h3>Tempat Perlindungan Khas</h3>
+                <p>Kami menyediakan tempat perlindungan selamat untuk hampir 2,000 kucing liar dan yang ditinggalkan, serta beberapa burung dan ayam. Pemilik yang tidak lagi dapat menjaga kucing mereka boleh menyerahkan kucing tersebut kepada shelter dengan bayaran (biasanya RM50 untuk kucing biasa dan RM100 untuk kucing yang mengandung) untuk membantu menampung kos penjagaan jangka panjang dan makanan.</p>
+            </div>
+
+            <div class="card">
+                <img src="IMAGE/BUSTANAKUCING12.JPG">
+                <h3>Penjagaan Kesihatan & Pemulihan</h3>
+                <p>Kemudahan ini merangkumi kawasan untuk merawat kucing yang sakit atau cedera. Kami menguruskan penyakit kucing yang biasa dan menyediakan penjagaan rapi untuk keadaan serius seperti sporotrichosis dan parvovirus. Selain itu, terdapat pasukan kakitangan dan sukarelawan yang berdedikasi untuk mengendalikan pembersihan sangkar dan rutin pemakanan harian bagi memastikan persekitaran yang bersih.</p>
+	</div>
+	<div class="card">
+		<img src="IMAGE/BUSTANAKUCING10.JPG">
+                <h3>Panel Klinik & Doktor Penasihat</h3>
+	<p>1. Klinik Haiwan Purrfect, Bandar Darulaman, Jitra Kedah. (Dr. Zafiyah</p>
+	<p>2. Klinik Haiwan Sanctuary, Kangar Jaya, Kangar, Perlis. (Dr. Ling)</p>
+	<p>3. Klinik Haiwan Tuah, Padang Serai, Kulim, Kedah. (Dr. Shahzani)</p> 
+		</div>
+            </div>
+	</div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="galeri">
+    <div class="container">
+        <h2 style="text-align:center;">Galeri Bustana Kucing Perlis🐾</h2>
+
+        <div class="gallery">
+                <img src="IMAGE/BUSTANAKUCING1.JPG">
+                <img src="IMAGE/BUSTANAKUCING2.JPG">
+                <img src="IMAGE/BUSTANAKUCING3.JPG">
+                <img src="IMAGE/BUSTANAKUCING4.JPG">
+		<img src="IMAGE/BUSTANAKUCING6.JPG">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="section" id="lokasi"> <div class="container" style="text-align: center;">
+        <h2>Kunjungi Kami</h2>
+        <div class="map-container" style="margin-top: 20px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.000000000000!2d100.180000000000!3d6.480000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ca3d58679d63f%3A0x6d90000000000000!2sBustana%20Kucing%20Perlis!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy" 
+                width="100%" height="400" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+	
+<footer>
+    <p>© 2026 Bustana Kucing Perlis Company | Made with 🐱</p>
+</footer>
+
+</body>
+</html>
